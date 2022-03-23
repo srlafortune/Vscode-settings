@@ -1,0 +1,81 @@
+{
+  "files.autoSave": "afterDelay", // no longer have to worry about saving
+  "editor.fontFamily": "Fira Code", // for the ligatures fancy arrows and more
+  "editor.fontWeight": "450",
+  "editor.bracketPairColorization.enabled": true, // easier to tell what brackets go to what
+  "editor.linkedEditing": true, // can change beginning and end html tags
+  "editor.cursorBlinking": "smooth", // looks cool
+  "editor.cursorSmoothCaretAnimation": true, // looks cool
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  "editor.formatOnPaste": true, // will use prettier when pasting code
+  "editor.formatOnSave": true, // will use prettier when saving
+  "editor.formatOnSaveMode": "modificationsIfAvailable", // so that there are less changes in git when all the formatting changes
+  "editor.minimap.enabled": false, // mini view of code, does nothing
+  "editor.acceptSuggestionOnEnter": "smart", // if a suggestion comes up but I want to make a new line maybe will help with that
+  "editor.suggest.insertMode": "replace", // maybe, I think I usually delete things after the suggestion when using it
+  "editor.suggest.localityBonus": true, // should improve suggestions
+  "editor.suggest.preview": true, // will show the first suggestion before selecting, can use more
+  "workbench.fontAliasing": "auto",
+  "breadcrumbs.enabled": false, // if I arranged groups then I want them to stay open when opening and closing
+  "workbench.editor.enablePreview": false, // If I open a file I want it open
+  "workbench.editor.focusRecentEditorAfterClose": false, // left to right makes more sense
+  "workbench.editor.limit.enabled": true, // I should not have too many files open at once
+  "workbench.editor.openPositioning": "last", // fits better with macos
+  "window.openFilesInNewWindow": "default", // if I open a file that doesn't have anything to do with current project open should open somewhere else
+  "explorer.autoReveal": false, // maybe, this might interfere with open order not sure
+  "search.collapseResults": "auto", // if there are too many results I want to parse through them first
+  "terminal.integrated.enableBell": true, // will alert me when command is finished?
+  "terminal.integrated.shellIntegration.enabled": true, // not sure
+  "editor.foldingImportsByDefault": true, // can focus on the actual code more
+  "editor.gotoLocation.multipleDeclarations": "goto", // I don't like peek
+  "editor.gotoLocation.multipleDefinitions": "goto", // I don't like peek
+  "editor.gotoLocation.multipleImplementations": "goto", // I don't like peek
+  "editor.gotoLocation.multipleReferences": "goto", // I don't like peek
+  "editor.gotoLocation.multipleTypeDefinitions": "goto", // I don't like peek
+  "editor.guides.bracketPairs": true, // Helps to tell what level I'm on
+  "editor.overviewRulerBorder": false, // looks cleaner
+  "editor.parameterHints.cycle": true, // looks cleaner
+  "editor.selectionHighlight": false, // don't need to see for everything but variables
+  "editor.find.autoFindInSelection": "multiline", // if im selecting something should assume I want to find in that
+  "editor.find.seedSearchStringFromSelection": "selection", // prefer snippets since they fill it in
+  "editor.suggest.showStatusBar": true, // reminder for keybinds
+  "files.hotExit": "onExitAndWindowClose", // can come back to projects as they were in all cases
+  "workbench.list.keyboardNavigation": "filter", // should filter instead of just highlight, might be a lot of files
+  "workbench.list.openMode": "doubleClick", // clicking around navigation
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.splitSizing": "split", // dont want remnanent windows
+  "window.newWindowDimensions": "offset", // should be similar to current window
+  "explorer.confirmUndo": "verbose", // when I leave extensions I don't need to info anymore
+  "extensions.ignoreRecommendations": true, // dont want recommendation popups
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+  "terminal.integrated.confirmOnKill": "always",
+  "terminal.integrated.fontFamily": "MesloLGS NF", // powerlevel10k
+  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+  "terminal.integrated.tabs.hideCondition": "never", // always want to see the terminal tabs
+  "scm.diffDecorationsIgnoreTrimWhitespace": "inherit", // I don't want to see changes that don't matter in gutter
+  "git.autoStash": true, // can pull while I am working
+  "git.closeDiffOnOperation": true, // after committing should be done with looking at diff
+  "git.pruneOnFetch": true, // dont want branches that dont exist on remote anymore
+  "merge-conflict.autoNavigateNextConflict.enabled": true, // hard to find the next conflict sometime also thats what i'm doing
+  "editor.tabSize": 2, // hints
+  "javascript.inlayHints.parameterNames.enabled": "all", // hints
+  "javascript.referencesCodeLens.enabled": true, // can see how often the function is used
+  "javascript.suggest.completeFunctionCalls": true, // get all the params
+  "js/ts.implicitProjectConfig.checkJs": true, // error checking for js
+  "js/ts.implicitProjectConfig.strictNullChecks": true, // hints
+  "typescript.implementationsCodeLens.enabled": true, // hints
+  "typescript.inlayHints.parameterNames.enabled": "all", // hints
+  "typescript.referencesCodeLens.enabled": true, // can see how often the function is used
+  "typescript.suggest.completeFunctionCalls": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "explorer.compactFolders": false,
+  "prettier.requireConfig": true,
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.experimental.layoutControl.type": "both",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.labelFormat": "medium",
+  "explorer.experimental.fileNesting.expand": false,
+  "explorer.experimental.fileNesting.enabled": true // get all the params
+}
