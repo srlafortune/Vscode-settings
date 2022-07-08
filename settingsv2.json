@@ -11,12 +11,12 @@
   "editor.formatOnSave": true, // will use prettier when saving
   "editor.formatOnSaveMode": "modificationsIfAvailable", // so that there are less changes in git when all the formatting changes
   "editor.minimap.enabled": false, // mini view of code, does nothing
-  "editor.acceptSuggestionOnEnter": "smart", // if a suggestion comes up but I want to make a new line maybe will help with that
   "editor.suggest.insertMode": "replace", // maybe, I think I usually delete things after the suggestion when using it
   "editor.suggest.localityBonus": true, // should improve suggestions
   "editor.suggest.preview": true, // will show the first suggestion before selecting, can use more
   "workbench.fontAliasing": "auto",
   "breadcrumbs.enabled": false, // if I arranged groups then I want them to stay open when opening and closing
+  "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.enablePreview": false, // If I open a file I want it open
   "workbench.editor.focusRecentEditorAfterClose": false, // left to right makes more sense
   "workbench.editor.limit.enabled": true, // I should not have too many files open at once
@@ -41,7 +41,6 @@
   "editor.suggest.showStatusBar": true, // reminder for keybinds
   "files.hotExit": "onExitAndWindowClose", // can come back to projects as they were in all cases
   "workbench.list.keyboardNavigation": "filter", // should filter instead of just highlight, might be a lot of files
-  "workbench.list.openMode": "doubleClick", // clicking around navigation
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.splitSizing": "split", // dont want remnanent windows
   "window.newWindowDimensions": "offset", // should be similar to current window
@@ -70,12 +69,30 @@
   "workbench.tree.renderIndentGuides": "always",
   "explorer.compactFolders": false,
   "prettier.requireConfig": true,
+  "workbench.layoutControl.type": "both",
   "editor.wordWrap": "on",
+  "explorer.fileNesting.enabled": true,
+  "terminal.integrated.shellIntegration.showWelcome": false,
+  "explorer.openEditors.sortOrder": "fullPath",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "workbench.experimental.layoutControl.type": "both",
-  "workbench.colorTheme": "GitHub Dark Default",
-  "workbench.editor.closeEmptyGroups": false,
+  
+   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "eslint.alwaysShowStatus": true,
   "workbench.editor.labelFormat": "medium",
-  "explorer.experimental.fileNesting.expand": false,
-  "explorer.experimental.fileNesting.enabled": true // get all the params
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "terminal.integrated.minimumContrastRatio": 1,
+  "editor.accessibilitySupport": "off",
+  "window.commandCenter": true
 }
